@@ -1,0 +1,135 @@
+:root {
+    --main-white: #f0f0f0;
+    --main-red: #be3144;
+    --main-blue: #45567d;
+    --main-gray: rgb(79, 77, 77);
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+head {
+  display: none;
+}
+
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.4;
+  color: var(--main-gray);
+  padding-top: 10rem;
+/*  padding-left: 5rem;*/
+} 
+
+h1 {
+  padding-top: 10rem;
+  text-align: center;
+} 
+
+h2, h3 {
+  padding-top: 7rem;
+  text-align: center;
+}
+
+#navbar {
+  position: fixed;
+  top: 0; 
+  width: 100%;
+  left: 0;
+  display: flex;
+  justify-content: flex-end;
+  background: var(--main-red);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+  z-index: 10
+}
+
+.nav-list {
+  display: flex;
+  margin-right: 2rem;
+  font-size: 22px;
+  font-weight: 500;
+  list-style-type: none;
+}
+
+.nav-list > ul{
+  box-sizing: border-box;
+  list-style: none;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-inline-start: 0px;
+  margin-inline-end: 18.5px;
+  padding-inline-start: 0px;
+  display: flex;
+}
+
+li{
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+
+.nav-list a {
+  display: block;
+  font-size: 2.2rem;
+  padding: 2rem;
+  color: var(--main-white);
+  text-decoration: none;
+}
+
+#welcome-section > p {
+  text-align: justify;
+  padding-left: 15rem;
+  padding-right: 15rem;
+}
+
+#projects {
+  text-align: justify;
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+
+.project-tile a {
+/*  text-decoration: none;*/
+  color: var(--main-gray), bolder;
+  cursor: pointer;
+}
+
+.lang-list, .edu-list {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+}
+
+.lang-list > li {
+  list-style-type: circle;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background: var(--main-gray);
+  color: var(--main-white);
+  margin-top: 5rem;
+}
+
+@media (max-width: 300px) {
+  html {
+      font-size: 50%;
+  }
+}
+
